@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+    <title>Demon</title>
+    <style>
+      /* Custom Styles */
+      @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
+      body {
+        font-family: "Comic Neue", cursive;
+      }
+      .project-card:hover {
+        transform: translateY(-5px);
+        transition: transform 0.3s ease;
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-gradient-to-br from-purple-600 to-blue-600 text-white font-sans leading-normal tracking-normal"
+  >
+    <!-- Navigation -->
+    <nav class="bg-transparent py-6">
+      <div class="container mx-auto px-6 md:px-0">
+        <div class="flex items-center justify-between">
+          <div>
+            <a class="text-2xl font-bold text-white" href="/">🌟 Your Name</a>
+          </div>
+          <div>
+            <a class="text-white hover:text-gray-300 mr-4" href="/home">Home</a>
+            <a class="text-white hover:text-gray-300 mr-4" href="/about"
+              >About</a
+            >
+            <a class="text-white hover:text-gray-300" href="/contact"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="bg-white py-20 px-6">
+      <div class="container mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-6">Contact Me</h2>
+        <form>
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-semibold mb-2"
+              for="name"
+              >Name</label
+            >
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="name"
+              type="text"
+              placeholder="👋 Your Name"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-semibold mb-2"
+              for="email"
+              >Email</label
+            >
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="email"
+              type="email"
+              placeholder="✉️ Your Email"
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              class="block text-gray-700 text-sm font-semibold mb-2"
+              for="message"
+              >Message</label
+            >
+            <textarea
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="message"
+              placeholder="💬 Your Message"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="flex items-center justify-center">
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="button"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-transparent py-6">
+      <div class="container mx-auto text-center">
+        <p class="text-white">🌟 © 2024 Your Name. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
